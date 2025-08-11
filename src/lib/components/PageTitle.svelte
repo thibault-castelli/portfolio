@@ -9,6 +9,6 @@
 </script>
 
 <h2 in:typewriter={{ delay: 0, speed: 10 }}>
-	<span class="text-muted">$title = </span>
-	{title}<span class="text-muted">;</span>
+	<span class="text-muted-foreground">$title = </span>
+	{title}<span class="text-muted-foreground">;</span>
 </h2>
