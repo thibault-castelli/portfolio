@@ -3,8 +3,6 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import NavLink from '$lib/components/NavLink.svelte';
 	import { Linkedin, Github } from '@lucide/svelte';
-	import { Canvas } from '@threlte/core';
-	import Scene from '$lib/components/3d/Scene.svelte';
 	import { Button } from '$lib/components/ui/button';
 
 	let { children } = $props();
@@ -21,6 +19,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Thibault Castelli</title>
 </svelte:head>
 
 <header class="items-center justify-between space-y-6 px-6 pt-6 pb-3 xl:flex">

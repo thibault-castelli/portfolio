@@ -1,17 +1,17 @@
 <script lang="ts">
-	import PageTitle from '$lib/components/PageTitle.svelte';
-	import PageContent from '$lib/components/PageContent.svelte';
-	import { Button } from '$lib/components/ui/button';
 	import CodeBlock from '$lib/components/codeBlock/CodeBlock.svelte';
 	import CodeKeyword from '$lib/components/codeBlock/CodeKeyword.svelte';
 	import CodeVariable from '$lib/components/codeBlock/CodeVariable.svelte';
 	import CodeString from '$lib/components/codeBlock/CodeString.svelte';
 	import CodeValue from '$lib/components/codeBlock/CodeValue.svelte';
-	import profilePicture from '$lib/assets/profile.png';
 </script>
 
+<svelte:head>
+	<title>Thibault Castelli</title>
+</svelte:head>
+
 <div class="flex gap-5">
-	<CodeBlock title="developer.js">
+	<CodeBlock title="profile.js">
 		<p><CodeKeyword>const</CodeKeyword> profile = &#123;</p>
 		<div class="ml-8">
 			<p><CodeVariable>name</CodeVariable>: <CodeString>'Thibault Castelli'</CodeString>,</p>
@@ -24,16 +24,19 @@
 				<CodeString tabCount={1}>'React'</CodeString>,
 				<CodeString>'NextJS'</CodeString>,
 				<CodeString>'Redux'</CodeString>,
+				<br />
+				<CodeString tabCount={1}>'VueJS'</CodeString>,
 				<CodeString>'Svelte'</CodeString>,
-				<CodeString>'Vue'</CodeString>,
 				<CodeString>'TypeScript'</CodeString>,
 				<br />
 				<CodeString tabCount={1}>'.NET Core'</CodeString>,
-				<CodeString>'Laravel'</CodeString>,
+				<CodeString>'NestJS'</CodeString>,
 				<CodeString>'Express'</CodeString>,
+				<CodeString>'Laravel'</CodeString>,
 				<br />
 				<CodeString tabCount={1}>'MySQL'</CodeString>,
 				<CodeString>'PostgreSQL'</CodeString>,
+				<CodeString>'MongoDB'</CodeString>,
 				<br />
 				<CodeString tabCount={1}>'Docker'</CodeString>,
 				<CodeString>'Git'</CodeString>,
@@ -53,10 +56,6 @@
 					seeking a challenging role within a collaborative team where I can leverage my skills to
 					develop innovative web applications.'
 				</CodeString>
-			</p>
-			<p>
-				<CodeVariable>picture</CodeVariable>:
-				<img alt="Thibault Castelli" src={profilePicture} class="w-32" />
 			</p>
 		</div>
 		<p>&#125;;</p>
