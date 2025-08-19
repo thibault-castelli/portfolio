@@ -2,26 +2,27 @@
 	import * as Card from '$lib/components/ui/card/index.js';
 	import type { Snippet } from 'svelte';
 	import { Badge } from '$lib/components/ui/badge';
-	import { scale } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 
 	interface Props {
 		children: Snippet;
 		title: string;
-		company: string;
+		school: string;
 		dates: string;
-		descriptions: string[];
+		description: string;
+		animationDelay: number;
 	}
 
-	const { children, title, company, dates, descriptions }: Props = $props();
+	const { children, title, school, dates, description, animationDelay }: Props = $props();
 </script>
 
-<article class="h-full w-full" in:scale={{ duration: 800 }}>
+<article class="h-full w-full" in:fly={{ x: -400, y: 200, duration: 800, delay: animationDelay }}>
 	<Card.Root
 		class="h-full w-full bg-secondary-foreground transition hover:border-primary hover:shadow-2xl"
 	>
 		<Card.Header>
 			<Card.Title class="flex items-center gap-3">
-				<div in:scale={{ duration: 800 }} class="flex items-center gap-3">
+				<div class="flex items-center gap-3">
 					<div class="inline-block rounded-2xl border bg-accent p-3">
 						{@render children?.()}
 					</div>
@@ -29,21 +30,17 @@
 				</div>
 			</Card.Title>
 			<Card.Description>
-				<div class="mt-3 flex items-center justify-between" in:scale={{ duration: 600 }}>
+				<div class="mt-3 flex items-center justify-between">
 					<Badge
 						class="hover:text-shadow mx-1 cursor-default transition hover:border-primary hover:bg-accent-foreground hover:text-primary hover:shadow-2xl"
-						>{company}</Badge
+						>{school}</Badge
 					>
 					<p>{dates}</p>
 				</div>
 			</Card.Description>
 		</Card.Header>
 		<Card.Content>
-			<ul class="list-disc space-y-3 px-5" in:scale={{ duration: 900 }}>
-				{#each descriptions as description, index (index)}
-					<li>{description}</li>
-				{/each}
-			</ul>
+			<p class="text-xs italic">{description}</p>
 		</Card.Content>
 	</Card.Root>
 </article>
