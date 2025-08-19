@@ -42,7 +42,7 @@
 
 <footer class="mb-3 flex items-center justify-between border-t px-6 pt-3">
 	<a href="/CASTELLI%20Thibault%20-%20CV%202025.pdf" download="">
-		<Button>getResume()</Button>
+		<Button class="hover:cursor-pointer">getResume()</Button>
 	</a>
 
 	<div class="flex gap-3">

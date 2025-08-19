@@ -4,11 +4,14 @@
 	import CodeVariable from '$lib/components/codeBlock/CodeVariable.svelte';
 	import CodeString from '$lib/components/codeBlock/CodeString.svelte';
 	import CodeValue from '$lib/components/codeBlock/CodeValue.svelte';
+	import PageTitle from '$lib/components/PageTitle.svelte';
 </script>
 
 <svelte:head>
 	<title>Thibault Castelli</title>
 </svelte:head>
+
+<PageTitle title="Home" />
 
 <div class="flex gap-5">
 	<CodeBlock title="profile.js">
@@ -62,6 +65,6 @@
 	</CodeBlock>
 
 	<div class="w-1/3">
-		<p>add something here</p>
+		<p>Add something here</p>
 	</div>
 </div>
