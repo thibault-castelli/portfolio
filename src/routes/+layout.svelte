@@ -22,25 +22,31 @@
 	<title>Thibault Castelli</title>
 </svelte:head>
 
-<header class="items-center justify-between space-y-6 px-6 pt-6 pb-3 xl:flex">
+<header
+	class="sticky top-0 z-10 items-center justify-between space-y-6 border-b border-b-background bg-primary px-6 pt-3 pb-3 shadow-2xl xl:flex"
+>
 	<h1 class="mb-0 text-3xl">
-		<span class="text-primary">&gt</span> thibault castelli<span class="blink text-primary">_</span>
+		<span class="font-bold text-accent">&gt</span> thibault castelli<span
+			class="blink font-bold text-accent">_</span
+		>
 	</h1>
 	<nav class="mt-5 xl:mt-0">
-		<span class="text-muted-foreground">$pages = [</span>
+		<span class="text-muted">$pages = [</span>
 		{#each links as link, i (link.href)}
 			<NavLink href={link.href} text={link.text} />{#if i === links.length - 1}{:else},&nbsp;
 			{/if}
 		{/each}
-		<span class="text-muted-foreground">];</span>
+		<span class="text-muted">];</span>
 	</nav>
 </header>
 
-<main class="container mx-auto p-6">
+<main class="container mx-auto grow p-6">
 	{@render children?.()}
 </main>
 
-<footer class="mb-3 flex items-center justify-between border-t px-6 pt-3">
+<footer
+	class="sticky bottom-0 z-10 flex items-center justify-between border-t border-t-primary bg-background px-6 py-2"
+>
 	<a href="/CASTELLI%20Thibault%20-%20CV%202025.pdf" download="">
 		<Button class="hover:cursor-pointer">getResume()</Button>
 	</a>
