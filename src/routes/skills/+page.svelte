@@ -4,6 +4,7 @@
 	import SkillCard from '$lib/components/cards/SkillCard.svelte';
 	import PageTitle from '$lib/components/PageTitle.svelte';
 	import type { BadgeLink } from '$lib/types/BadgeLink';
+	import WireframeSphere from '$lib/components/3d/WireframeSphere.svelte';
 
 	const frontendBadges: BadgeLink[] = [
 		{ text: 'React', link: 'https://react.dev/' },
@@ -39,10 +40,12 @@
 
 <PageTitle title="Skills" />
 
-<section class="mb-10 text-center">Add something here</section>
-
 <section class="grid grid-cols-1 place-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3" in:fade>
 	<SkillCard title="Frontend Development" badges={frontendBadges}><Code /></SkillCard>
 	<SkillCard title="Backend Development" badges={backendBadges}><Database /></SkillCard>
 	<SkillCard title="Cloud & DevOps" badges={devOpsBadges}><Cloud /></SkillCard>
+</section>
+
+<section class="mx-auto mt-10 w-96 text-center" in:fade={{ duration: 800 }}>
+	<WireframeSphere />
 </section>
