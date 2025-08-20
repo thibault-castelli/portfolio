@@ -41,7 +41,7 @@
 
 <section class="mb-10 text-center">Add something here</section>
 
-<section class="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 lg:grid-cols-3" in:fade>
+<section class="grid grid-cols-1 place-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3" in:fade>
 	<SkillCard title="Frontend Development" badges={frontendBadges}><Code /></SkillCard>
 	<SkillCard title="Backend Development" badges={backendBadges}><Database /></SkillCard>
 	<SkillCard title="Cloud & DevOps" badges={devOpsBadges}><Cloud /></SkillCard>

@@ -5,24 +5,24 @@
 	import type { BadgeLink } from '$lib/types/BadgeLink';
 
 	interface Props {
-		children: Snippet;
+		icon: Snippet;
 		title: string;
 		company: BadgeLink;
 		dates: string;
-		descriptions: string[];
+		descriptions: Snippet;
 	}
 
-	const { children, title, company, dates, descriptions }: Props = $props();
+	const { icon, title, company, dates, descriptions }: Props = $props();
 </script>
 
 <Card.Root
-	class="h-full w-full bg-secondary-foreground transition hover:border-primary hover:shadow-2xl"
+	class="h-full w-full bg-secondary-foreground transition hover:scale-[1.03] hover:border-primary hover:shadow-md hover:shadow-primary"
 >
 	<Card.Header>
 		<Card.Title class="flex items-center gap-3">
 			<div class="flex items-center gap-3">
 				<div class="inline-block rounded-2xl border bg-accent p-3">
-					{@render children?.()}
+					{@render icon()}
 				</div>
 				{title}
 			</div>
@@ -31,7 +31,7 @@
 			<div class="mt-3 flex items-center justify-between">
 				<a href={company.link} target="_blank">
 					<Badge
-						class="hover:text-shadow mx-1 cursor-default transition hover:border-primary hover:bg-accent-foreground hover:text-primary hover:shadow-2xl"
+						class="hover:text-shadow transition hover:border-primary hover:bg-background hover:text-primary hover:shadow-sm hover:shadow-primary"
 					>
 						{company.text}
 					</Badge>
@@ -42,9 +42,7 @@
 	</Card.Header>
 	<Card.Content>
 		<ul class="list-disc space-y-3 px-5">
-			{#each descriptions as description, index (index)}
-				<li>{description}</li>
-			{/each}
+			{@render descriptions()}
 		</ul>
 	</Card.Content>
 </Card.Root>

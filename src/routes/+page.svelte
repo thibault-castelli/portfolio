@@ -21,32 +21,6 @@
 			<p>
 				<CodeVariable>title</CodeVariable>: <CodeString>'Full-Stack Web Developer'</CodeString>,
 			</p>
-			<p>
-				<CodeVariable>skills</CodeVariable>: [
-				<br />
-				<CodeString tabCount={1}>'React'</CodeString>,
-				<CodeString>'NextJS'</CodeString>,
-				<CodeString>'Redux'</CodeString>,
-				<br />
-				<CodeString tabCount={1}>'VueJS'</CodeString>,
-				<CodeString>'Svelte'</CodeString>,
-				<CodeString>'TypeScript'</CodeString>,
-				<br />
-				<CodeString tabCount={1}>'.NET Core'</CodeString>,
-				<CodeString>'NestJS'</CodeString>,
-				<CodeString>'Express'</CodeString>,
-				<CodeString>'Laravel'</CodeString>,
-				<br />
-				<CodeString tabCount={1}>'MySQL'</CodeString>,
-				<CodeString>'PostgreSQL'</CodeString>,
-				<CodeString>'MongoDB'</CodeString>,
-				<br />
-				<CodeString tabCount={1}>'Docker'</CodeString>,
-				<CodeString>'Git'</CodeString>,
-				<CodeString>'Linux'</CodeString>
-				<br />
-				],
-			</p>
 			<p><CodeVariable>adaptability</CodeVariable>: <CodeValue>true</CodeValue></p>
 			<p><CodeVariable>teamWorker</CodeVariable>: <CodeValue>true</CodeValue></p>
 			<p><CodeVariable>spiritOfSynthesis</CodeVariable>: <CodeValue>true</CodeValue></p>
@@ -54,10 +28,8 @@
 			<p>
 				<CodeVariable>description</CodeVariable>:
 				<CodeString>
-					'Hello! My name is Thibault Castelli, and I am a highly motivated full stack web developer
-					with over a year of professional experience. Having recently moved to Eindhoven, I am
-					seeking a challenging role within a collaborative team where I can leverage my skills to
-					develop innovative web applications.'
+					'Hello! My name is Thibault Castelli, and I am French, but don't worry - I'm a nice
+					person!
 				</CodeString>
 			</p>
 		</div>

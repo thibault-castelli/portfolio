@@ -9,7 +9,7 @@
 
 <section class="mb-5 text-center">Add something here</section>
 
-<section class="grid grid-cols-1 place-items-center gap-4 lg:grid-cols-2" in:fade>
+<section class="grid grid-cols-1 place-items-center gap-6 lg:grid-cols-2" in:fade>
 	<EducationCard
 		title="DEC - Computer Science"
 		school={{

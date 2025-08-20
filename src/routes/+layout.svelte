@@ -33,7 +33,9 @@
 	<nav class="mt-5 xl:mt-0">
 		<span class="text-muted">$pages = [</span>
 		{#each links as link, i (link.href)}
-			<NavLink href={link.href} text={link.text} />{#if i === links.length - 1}{:else},&nbsp;
+			<NavLink href={link.href} text={link.text} />{#if i === links.length - 1}{:else}<span
+					class="text-muted">,&nbsp;</span
+				>
 			{/if}
 		{/each}
 		<span class="text-muted">];</span>
