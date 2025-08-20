@@ -6,9 +6,10 @@
 	interface Props {
 		zoom: number;
 		dotSize: number;
+		controlSpeed: number;
 	}
 
-	const { zoom, dotSize }: Props = $props();
+	const { zoom, dotSize, controlSpeed }: Props = $props();
 
 	let canvas: HTMLCanvasElement;
 
@@ -86,7 +87,9 @@
 
 		controls = new OrbitControls(camera, renderer.domElement);
 		controls.enableDamping = true;
-		controls.zoomSpeed = 0;
+		controls.rotateSpeed = controlSpeed;
+		controls.enablePan = false;
+		controls.enableZoom = false;
 
 		const dotCube = createPointCube(2, 20);
 		scene.add(dotCube);

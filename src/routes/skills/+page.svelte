@@ -40,20 +40,18 @@
 
 <PageTitle title="Skills" />
 
-<div class="flex flex-col">
-	<section class="grid grid-cols-1 place-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3" in:fade>
-		<SkillCard title="Frontend Development" badges={frontendBadges}
-			><Code class="fade-to-orange" /></SkillCard
-		>
-		<SkillCard title="Backend Development" badges={backendBadges}
-			><Database class="fade-to-orange" /></SkillCard
-		>
-		<SkillCard title="Cloud & DevOps" badges={devOpsBadges}
-			><Cloud class="fade-to-orange" /></SkillCard
-		>
-	</section>
+<section class="grid grid-cols-1 place-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3" in:fade>
+	<SkillCard title="Frontend Development" badges={frontendBadges}
+		><Code class="fade-to-orange" /></SkillCard
+	>
+	<SkillCard title="Backend Development" badges={backendBadges}
+		><Database class="fade-to-orange" /></SkillCard
+	>
+	<SkillCard title="Cloud & DevOps" badges={devOpsBadges}
+		><Cloud class="fade-to-orange" /></SkillCard
+	>
+</section>
 
-	<section class="mx-auto mt-10 h-44 w-full" in:fade={{ duration: 800 }}>
-		<DotCube zoom={35} dotSize={0.2} />
-	</section>
-</div>
+<section class="mx-auto mt-10 h-44 w-full" in:fade={{ duration: 800 }}>
+	<DotCube zoom={35} dotSize={0.2} controlSpeed={0.02} />
+</section>

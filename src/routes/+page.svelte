@@ -7,6 +7,7 @@
 	import PageTitle from '$lib/components/PageTitle.svelte';
 	import CodeComment from '$lib/components/codeBlock/CodeComment.svelte';
 	import DotCube from '$lib/components/3d/DotCube.svelte';
+	import { fade } from 'svelte/transition';
 </script>
 
 <svelte:head>
@@ -46,14 +47,14 @@
 				<CodeVariable>description</CodeVariable>:
 				<CodeString>
 					'Hello! My name is Thibault Castelli, and I am French, but don't worry - I'm a nice
-					person!'
+					person! CONTINUE'
 				</CodeString>
 			</p>
 		</div>
 		<p class="mt-3">&#125;;</p>
 	</CodeBlock>
 
-	<div class="w-1/3">
-		<DotCube zoom={5} dotSize={0.05} />
+	<div class="w-1/3" in:fade={{ duration: 800 }}>
+		<DotCube zoom={5} dotSize={0.05} controlSpeed={0.15} />
 	</div>
 </div>

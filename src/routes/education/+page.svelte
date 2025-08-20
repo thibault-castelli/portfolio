@@ -3,13 +3,12 @@
 	import { fade } from 'svelte/transition';
 	import EducationCard from '$lib/components/cards/EducationCard.svelte';
 	import { Computer, Speaker, FlaskConical } from '@lucide/svelte';
+	import DotCube from '$lib/components/3d/DotCube.svelte';
 </script>
 
 <PageTitle title="Education" />
 
-<section class="mb-5 text-center">Add something here</section>
-
-<section class="grid grid-cols-1 place-items-center gap-6 lg:grid-cols-2" in:fade>
+<section class="grid grid-cols-1 place-items-center gap-6 lg:grid-cols-2 xl:grid-cols-3" in:fade>
 	<EducationCard
 		title="DEC - Computer Science"
 		school={{
@@ -19,19 +18,19 @@
 		dates="2022 - 2025"
 		description="Canadian diploma"
 	>
-		<Computer />
+		<Computer class="fade-to-orange" />
 	</EducationCard>
 
 	<EducationCard
 		title="BTS Audiovisual - Sound engineering"
 		school={{
-			text: "Les Atelier de l'Image et du Son, France",
+			text: 'A.I&S, France',
 			link: 'https://www.ais-formation.com/formations/bts-metiers-du-son'
 		}}
 		dates="2015 - 2017"
 		description="French diploma"
 	>
-		<Speaker />
+		<Speaker class="fade-to-orange" />
 	</EducationCard>
 
 	<EducationCard
@@ -43,6 +42,10 @@
 		dates="2012 - 2015"
 		description="French diploma"
 	>
-		<FlaskConical />
+		<FlaskConical class="fade-to-orange" />
 	</EducationCard>
+</section>
+
+<section class="mx-auto mt-10 h-48 w-full" in:fade={{ duration: 800 }}>
+	<DotCube zoom={35} dotSize={0.2} controlSpeed={0.02} />
 </section>
