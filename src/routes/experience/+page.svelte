@@ -17,6 +17,7 @@
 	];
 
 	const soundEngineerDescriptions = [
+		'Add hard skill',
 		'Demonstrated strong stress management skills during live performances while consistently meeting tight project deadlines.',
 		'Collaborated with cross-functional teams to achieve common goals and deliver successful recording projects, following artistic direction.'
 	];
@@ -24,10 +25,11 @@
 
 <PageTitle title="Experience" />
 
+Add emphasis on keywords
 <section class="grid grid-cols-1 place-items-center gap-4 xl:grid-cols-2" in:fade>
 	<ExperienceCard
 		title="Full-Stack Web Developer"
-		company="Logix Opérations, Canada"
+		company={{ text: 'Logix Opérations, Canada', link: 'https://logixoperations.com/' }}
 		dates="2025/01 - Present"
 		descriptions={logixJobDescriptions}
 	>
@@ -36,7 +38,10 @@
 
 	<ExperienceCard
 		title="Full-Stack Web Developer"
-		company="Ministry of the Executive Council of Quebec, Canada"
+		company={{
+			text: 'Ministry of the Executive Council of Quebec, Canada',
+			link: 'https://www.quebec.ca/en/gouvernement/ministere/conseil-executif'
+		}}
 		dates="2024/06 - 2025/01"
 		descriptions={mceJobDescriptions}
 	>
@@ -45,7 +50,7 @@
 
 	<ExperienceCard
 		title="Sound engineer (live/recording)"
-		company="Freelance, France"
+		company={{ text: 'Freelance, France', link: 'https://www.youtube.com/watch?v=L-HpgNX6j0s' }}
 		dates="2017/06 - 2022/06"
 		descriptions={soundEngineerDescriptions}
 	>

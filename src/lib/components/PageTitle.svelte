@@ -9,7 +9,7 @@
 </script>
 
 <h2 class="mb-5 text-lg">
-	<span class="text-muted-foreground">$title = </span>
+	<span class="text-muted-foreground">$page_title = </span>
 	<span in:typewriter={{ delay: 0, speed: 55 }}>{title}</span><span class="text-muted-foreground"
 		>;</span
 	>
