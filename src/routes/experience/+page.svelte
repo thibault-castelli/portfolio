@@ -14,7 +14,7 @@
 		dates="2025/01 - Present"
 	>
 		{#snippet icon()}
-			<Database />
+			<Database class="fade-to-orange" />
 		{/snippet}
 		{#snippet descriptions()}
 			<li>
@@ -44,7 +44,7 @@
 		dates="2024/06 - 2025/01"
 	>
 		{#snippet icon()}
-			<Database />
+			<Database class="fade-to-orange" />
 		{/snippet}
 		{#snippet descriptions()}
 			<li>
@@ -72,7 +72,7 @@
 		dates="2017/06 - 2022/06"
 	>
 		{#snippet icon()}
-			<Speaker />
+			<Speaker class="fade-to-orange" />
 		{/snippet}
 		{#snippet descriptions()}
 			<li>

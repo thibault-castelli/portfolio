@@ -87,3 +87,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes whiteToOrange {
+    from { color: var(--secondary); }
+    to   { color: var(--primary); }
+}
+.fade-to-orange {
+    color: var(--secondary);
+
+    animation-name: whiteToOrange;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.scroll-card {
+    opacity: 0;
+    transform: translateY(300px);   /* start slightly lower */
+    transition: opacity 0.45s ease-out,
+    transform 0.45s ease-out;
+}
+
+/* When the card is “active”, let it slide up and fade in */
+.scroll-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}

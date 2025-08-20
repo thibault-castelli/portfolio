@@ -4,7 +4,7 @@
 	import SkillCard from '$lib/components/cards/SkillCard.svelte';
 	import PageTitle from '$lib/components/PageTitle.svelte';
 	import type { BadgeLink } from '$lib/types/BadgeLink';
-	import WireframeSphere from '$lib/components/3d/WireframeSphere.svelte';
+	import DotCube from '$lib/components/3d/DotCube.svelte';
 
 	const frontendBadges: BadgeLink[] = [
 		{ text: 'React', link: 'https://react.dev/' },
@@ -40,12 +40,20 @@
 
 <PageTitle title="Skills" />
 
-<section class="grid grid-cols-1 place-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3" in:fade>
-	<SkillCard title="Frontend Development" badges={frontendBadges}><Code /></SkillCard>
-	<SkillCard title="Backend Development" badges={backendBadges}><Database /></SkillCard>
-	<SkillCard title="Cloud & DevOps" badges={devOpsBadges}><Cloud /></SkillCard>
-</section>
+<div class="flex flex-col">
+	<section class="grid grid-cols-1 place-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3" in:fade>
+		<SkillCard title="Frontend Development" badges={frontendBadges}
+			><Code class="fade-to-orange" /></SkillCard
+		>
+		<SkillCard title="Backend Development" badges={backendBadges}
+			><Database class="fade-to-orange" /></SkillCard
+		>
+		<SkillCard title="Cloud & DevOps" badges={devOpsBadges}
+			><Cloud class="fade-to-orange" /></SkillCard
+		>
+	</section>
 
-<section class="mx-auto mt-10 w-96 text-center" in:fade={{ duration: 800 }}>
-	<WireframeSphere />
-</section>
+	<section class="mx-auto mt-10 h-44 w-full" in:fade={{ duration: 800 }}>
+		<DotCube zoom={35} dotSize={0.2} />
+	</section>
+</div>
