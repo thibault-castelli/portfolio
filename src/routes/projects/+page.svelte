@@ -1,6 +1,5 @@
 ﻿<script lang="ts">
 	import PageTitle from '$lib/components/PageTitle.svelte';
-	import DotCube from '$lib/components/3d/DotCube.svelte';
 	import { Dog, Code, Pickaxe } from '@lucide/svelte';
 	import ResponsiveCarousel from '$lib/components/ResponsiveCarousel.svelte';
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
@@ -17,6 +16,7 @@
 	import Minedock from '$lib/assets/minedock.png';
 	import MinedockCreate from '$lib/assets/minedock-create.png';
 	import MinedockDelete from '$lib/assets/minedock-delete.png';
+	import DotCube from '$lib/components/3d/DotCube.svelte';
 
 	const doggomodoroBadges: BadgeLink[] = [
 		{ text: 'Svelte', link: 'https://svelte.dev/' },
@@ -242,6 +242,10 @@
 			</Carousel.Item>
 		{/snippet}
 	</ResponsiveCarousel>
+</section>
+
+<section class="mx-auto mt-4 h-12 w-full" in:fade={{ duration: 800 }}>
+	<DotCube zoom={120} dotSize={0.6} controlSpeed={0.01} />
 </section>
 
 <style>

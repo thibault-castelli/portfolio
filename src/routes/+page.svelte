@@ -43,13 +43,6 @@
 				>
 			</p>
 			<p><CodeVariable>yearsOfExperience</CodeVariable>: <CodeValue>1.5</CodeValue>,</p>
-			<p>
-				<CodeVariable>description</CodeVariable>:
-				<CodeString>
-					'Hello! My name is Thibault Castelli, and I am French, but don't worry - I'm a nice
-					person! CONTINUE'
-				</CodeString>
-			</p>
 		</div>
 		<p class="mt-3">&#125;;</p>
 	</CodeBlock>

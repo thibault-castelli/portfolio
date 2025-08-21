@@ -25,10 +25,14 @@
 <header
 	class="sticky top-0 z-10 items-center justify-between space-y-6 border-b border-b-primary bg-background px-6 py-4 shadow-2xl xl:flex"
 >
-	<h1 class="mb-0 text-3xl">
-		<span class=" text-primary">&gt</span> thibault castelli<span class="blink text-primary">_</span
-		>
-	</h1>
+	<a href="/" class="mb-0">
+		<h1 class="mb-0 text-3xl">
+			<span class=" text-primary">&gt</span> thibault castelli<span class="blink text-primary"
+				>_</span
+			>
+		</h1>
+	</a>
+
 	<nav class="mt-5 xl:mt-0">
 		<span class="text-muted-foreground">$pages = [</span>
 		{#each links as link, i (link.href)}

@@ -117,7 +117,7 @@
 
 		// Cleanup
 		return () => {
-			if (animationId) cancelAnimationFrame(animationId);
+			cancelAnimationFrame(animationId);
 			resizeObserver.disconnect();
 			controls.dispose();
 			renderer.dispose();
