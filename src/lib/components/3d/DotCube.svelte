@@ -119,9 +119,13 @@
 		return () => {
 			cancelAnimationFrame(animationId);
 			resizeObserver.disconnect();
+			dotCube.geometry.dispose();
 			controls.dispose();
 			renderer.dispose();
 			scene.clear();
+			if (typeof renderer.forceContextLoss === 'function') {
+				renderer.forceContextLoss();
+			}
 		};
 	});
 
