@@ -11,6 +11,7 @@
 		{ text: 'Redux', link: 'https://redux.js.org/' },
 		{ text: 'NextJS', link: 'https://nextjs.org/' },
 		{ text: 'VueJS', link: 'https://vuejs.org/' },
+		{ text: 'Pinia', link: 'https://pinia.vuejs.org' },
 		{ text: 'Svelte', link: 'https://svelte.dev/' },
 		{ text: 'TypeScript', link: 'https://www.typescriptlang.org/' }
 	];
