@@ -108,7 +108,7 @@
 	</ResponsiveCarousel>
 </section>
 
-<section class="mx-auto mt-8 h-12 w-full" in:fade={{ duration: 800 }}>
+<section class="mx-auto mt-6 h-12 w-full" in:fade={{ duration: 800 }}>
 	<DotCube zoom={120} dotSize={0.6} controlSpeed={0.01} />
 </section>
 

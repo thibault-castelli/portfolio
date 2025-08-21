@@ -16,7 +16,7 @@
 
 <PageTitle title="Home" />
 
-<div class="flex gap-5">
+<div class="flex flex-col gap-5 lg:flex-row">
 	<CodeBlock title="profile.js">
 		<p class="mb-3"><CodeKeyword>const</CodeKeyword> profile = &#123;</p>
 		<div class="ml-8 space-y-3">
@@ -47,7 +47,7 @@
 		<p class="mt-3">&#125;;</p>
 	</CodeBlock>
 
-	<div class="w-1/3" in:fade={{ duration: 800 }}>
+	<div class="h-40 w-full lg:min-h-full lg:w-1/3" in:fade={{ duration: 800 }}>
 		<DotCube zoom={5} dotSize={0.05} controlSpeed={0.15} />
 	</div>
 </div>
