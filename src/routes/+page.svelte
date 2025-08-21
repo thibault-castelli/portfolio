@@ -47,7 +47,7 @@
 		<p class="mt-3">&#125;;</p>
 	</CodeBlock>
 
-	<div class="h-40 w-full lg:min-h-full lg:w-1/3" in:fade={{ duration: 800 }}>
+	<div class="h-40 w-full lg:h-auto lg:w-1/3" in:fade={{ duration: 800 }}>
 		<DotCube zoom={5} dotSize={0.05} controlSpeed={0.15} />
 	</div>
 </div>

@@ -65,7 +65,7 @@
 								<img
 									src={DoggomodoroHome}
 									alt="Doggomodoro home page"
-									class="rounded p-4 shadow-2xl"
+									class="mx-auto rounded p-4 shadow-2xl"
 								/>
 							</Dialog.Content>
 						</Dialog.Root>
@@ -82,7 +82,7 @@
 								<img
 									src={DoggomodoroStats}
 									alt="Doggomodoro dashboard page"
-									class="rounded p-4 shadow-2xl"
+									class="mx-auto rounded p-4 shadow-2xl"
 								/>
 							</Dialog.Content>
 						</Dialog.Root>
@@ -99,7 +99,7 @@
 								<img
 									src={DoggomodoroPresets}
 									alt="Doggomodoro preset page"
-									class="rounded p-4 shadow-2xl"
+									class="mx-auto rounded p-4 shadow-2xl"
 								/>
 							</Dialog.Content>
 						</Dialog.Root>
@@ -135,7 +135,7 @@
 								<img
 									src={AnotherCssBox}
 									alt="Another CSS Generator box page"
-									class="rounded p-4 shadow-2xl"
+									class="mx-auto rounded p-4 shadow-2xl"
 								/>
 							</Dialog.Content>
 						</Dialog.Root>
@@ -152,7 +152,7 @@
 								<img
 									src={AnotherCssBorder}
 									alt="Another CSS Generator border page"
-									class="rounded p-4 shadow-2xl"
+									class="mx-auto rounded p-4 shadow-2xl"
 								/>
 							</Dialog.Content>
 						</Dialog.Root>
@@ -169,7 +169,7 @@
 								<img
 									src={AnotherCssGradient}
 									alt="Another CSS Generator gradient page"
-									class="rounded p-4 shadow-2xl"
+									class="mx-auto rounded p-4 shadow-2xl"
 								/>
 							</Dialog.Content>
 						</Dialog.Root>
@@ -200,7 +200,11 @@
 								/>
 							</Dialog.Trigger>
 							<Dialog.Content class="min-w-[80vw]">
-								<img src={Minedock} alt="Minedock home page" class="rounded p-4 shadow-2xl" />
+								<img
+									src={Minedock}
+									alt="Minedock home page"
+									class="mx-auto rounded p-4 shadow-2xl"
+								/>
 							</Dialog.Content>
 						</Dialog.Root>
 
@@ -216,7 +220,7 @@
 								<img
 									src={MinedockCreate}
 									alt="Minedock create page"
-									class="rounded p-4 shadow-2xl"
+									class="mx-auto rounded p-4 shadow-2xl"
 								/>
 							</Dialog.Content>
 						</Dialog.Root>
@@ -233,7 +237,7 @@
 								<img
 									src={MinedockDelete}
 									alt="Minedock delete page"
-									class="rounded p-4 shadow-2xl"
+									class="mx-auto rounded p-4 shadow-2xl"
 								/>
 							</Dialog.Content>
 						</Dialog.Root>
