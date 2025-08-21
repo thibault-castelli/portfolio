@@ -8,9 +8,9 @@
 	const { title }: Props = $props();
 </script>
 
-<h2 class="mb-5 text-lg">
-	<span class="text-muted-foreground">$page_title = </span>
-	<span in:typewriter={{ delay: 0, speed: 55 }}>{title}</span><span class="text-muted-foreground"
-		>;</span
+<h2 class="mb-5">
+	<span class="text-lg text-muted-foreground">$page_title = </span>
+	<span class="text-primary" in:typewriter={{ delay: 0, speed: 55 }}>{title}</span><span
+		class="text-muted-foreground">;</span
 	>
 </h2>

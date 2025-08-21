@@ -12,8 +12,8 @@
 <a
 	{href}
 	class={[
-		'transition hover:text-accent hover:underline',
-		$page.url.pathname === href && 'font-bold text-accent'
+		'transition hover:text-primary hover:underline',
+		$page.url.pathname === href && ' text-primary'
 	]}
 >
 	{text}

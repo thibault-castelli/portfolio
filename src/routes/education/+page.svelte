@@ -46,6 +46,6 @@
 	</EducationCard>
 </section>
 
-<section class="mx-auto mt-10 h-48 w-full" in:fade={{ duration: 800 }}>
+<section class="mx-auto mt-10 h-[198px] w-full" in:fade={{ duration: 800 }}>
 	<DotCube zoom={35} dotSize={0.2} controlSpeed={0.02} />
 </section>

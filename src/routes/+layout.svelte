@@ -9,10 +9,10 @@
 
 	const links = [
 		{ href: '/', text: 'Home' },
+		{ href: '/projects', text: 'Projects' },
 		{ href: '/skills', text: 'Skills' },
 		{ href: '/experience', text: 'Experience' },
 		{ href: '/education', text: 'Education' },
-		{ href: '/projects', text: 'Projects' },
 		{ href: '/contact', text: 'Contact' }
 	];
 </script>
@@ -23,22 +23,21 @@
 </svelte:head>
 
 <header
-	class="sticky top-0 z-10 items-center justify-between space-y-6 border-b border-b-background bg-primary px-6 pt-3 pb-3 shadow-2xl xl:flex"
+	class="sticky top-0 z-10 items-center justify-between space-y-6 border-b border-b-primary bg-background px-6 py-4 shadow-2xl xl:flex"
 >
 	<h1 class="mb-0 text-3xl">
-		<span class="font-bold text-accent">&gt</span> thibault castelli<span
-			class="blink font-bold text-accent">_</span
+		<span class=" text-primary">&gt</span> thibault castelli<span class="blink text-primary">_</span
 		>
 	</h1>
 	<nav class="mt-5 xl:mt-0">
-		<span class="text-muted">$pages = [</span>
+		<span class="text-muted-foreground">$pages = [</span>
 		{#each links as link, i (link.href)}
 			<NavLink href={link.href} text={link.text} />{#if i === links.length - 1}{:else}<span
-					class="text-muted">,&nbsp;</span
+					class="text-muted-foreground">,&nbsp;</span
 				>
 			{/if}
 		{/each}
-		<span class="text-muted">];</span>
+		<span class="text-muted-foreground">];</span>
 	</nav>
 </header>
 
@@ -47,7 +46,7 @@
 </main>
 
 <footer
-	class="sticky bottom-0 z-10 flex items-center justify-between border-t border-t-primary bg-background px-6 py-2"
+	class="sticky bottom-0 z-10 flex items-center justify-between border-t border-t-primary bg-background px-6 py-3"
 >
 	<a href="/CASTELLI%20Thibault%20-%20CV%202025.pdf" download="">
 		<Button class="hover:cursor-pointer">getResume()</Button>
