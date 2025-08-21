@@ -117,7 +117,7 @@
 
 		// Cleanup
 		return () => {
-			cancelAnimationFrame(animationId);
+			if (animationId) cancelAnimationFrame(animationId);
 			resizeObserver.disconnect();
 			controls.dispose();
 			renderer.dispose();
@@ -127,7 +127,7 @@
 
 	onDestroy(() => {
 		// In case the component is removed before onMount cleanup runs
-		cancelAnimationFrame(animationId);
+		if (animationId) cancelAnimationFrame(animationId);
 	});
 </script>
 
