@@ -16,7 +16,7 @@
 </script>
 
 <Card.Root
-	class="h-full w-full bg-secondary-foreground transition hover:scale-[1.03] hover:border-primary hover:shadow-md hover:shadow-primary"
+	class="h-full w-full bg-secondary-foreground transition select-none hover:border-primary hover:shadow-sm hover:shadow-primary"
 >
 	<Card.Header>
 		<Card.Title class="flex items-center gap-3">
