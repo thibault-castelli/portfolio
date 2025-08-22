@@ -86,7 +86,7 @@
 						text: 'Freelance, France',
 						link: 'https://www.youtube.com/watch?v=L-HpgNX6j0s'
 					}}
-					dates="2017/06 - 2022/06"
+					dates="2017/06 - 2024/06"
 				>
 					{#snippet icon()}
 						<Speaker class="fade-to-orange" />
