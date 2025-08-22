@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.ico';
 	import NavLink from '$lib/components/NavLink.svelte';
 	import { Linkedin, Github, Menu } from '@lucide/svelte';
 	import { Button } from '$lib/components/ui/button';

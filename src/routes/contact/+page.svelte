@@ -6,6 +6,10 @@
 	import ContactCard from '$lib/components/cards/ContactCard.svelte';
 </script>
 
+<svelte:head>
+	<title>Contact | Thibault Castelli</title>
+</svelte:head>
+
 <PageTitle title="Contact" />
 
 <div class="flex flex-col gap-5 md:flex-row md:gap-20">

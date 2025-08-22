@@ -6,6 +6,10 @@
 	import DotCube from '$lib/components/3d/DotCube.svelte';
 </script>
 
+<svelte:head>
+	<title>Education | Thibault Castelli</title>
+</svelte:head>
+
 <PageTitle title="Education" />
 
 <section class="grid grid-cols-1 place-items-center gap-6 lg:grid-cols-2 xl:grid-cols-3" in:fade>

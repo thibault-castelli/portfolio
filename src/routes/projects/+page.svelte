@@ -32,6 +32,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Projects | Thibault Castelli</title>
+</svelte:head>
+
 <PageTitle title="Projects" />
 
 <section in:fade>

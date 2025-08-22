@@ -8,6 +8,10 @@
 	import ResponsiveCarousel from '$lib/components/ResponsiveCarousel.svelte';
 </script>
 
+<svelte:head>
+	<title>Experience | Thibault Castelli</title>
+</svelte:head>
+
 <PageTitle title="Experience" />
 
 <section in:fade>
