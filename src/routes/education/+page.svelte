@@ -20,7 +20,7 @@
 			link: 'https://www.cegepgarneau.ca/programmes/tous-les-programmes/informatique/'
 		}}
 		dates="2022 - 2025"
-		description="Canadian diploma"
+		description="Canadian diploma, comparable to a VWO with vocational subjects"
 	>
 		<Computer class="fade-to-orange" />
 	</EducationCard>
@@ -32,7 +32,7 @@
 			link: 'https://www.ais-formation.com/formations/bts-metiers-du-son'
 		}}
 		dates="2015 - 2017"
-		description="French diploma"
+		description="French diploma, comparable to 2 years of HBO"
 	>
 		<Speaker class="fade-to-orange" />
 	</EducationCard>
@@ -44,7 +44,7 @@
 			link: 'https://www.site.ac-aix-marseille.fr/lyc-mendesfrance-vitrolles/spip/'
 		}}
 		dates="2012 - 2015"
-		description="French diploma"
+		description="French diploma, comparable to a VWO diploma"
 	>
 		<FlaskConical class="fade-to-orange" />
 	</EducationCard>
