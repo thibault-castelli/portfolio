@@ -27,8 +27,11 @@
 				<div class="inline-block rounded-2xl border bg-accent p-3">
 					{@render icon()}
 				</div>
-				{title}
+				<a href={githubLink} target="_blank" class="hover:text-primary hover:underline">
+					{title}
+				</a>
 			</div>
+
 			<div class="flex gap-3">
 				<a href={githubLink} target="_blank" class="transition hover:text-primary">
 					<Github />
