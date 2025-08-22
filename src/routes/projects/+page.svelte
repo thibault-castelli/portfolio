@@ -121,9 +121,9 @@
 					{#snippet icon()}<Code class="fade-to-orange" />{/snippet}
 					{#snippet description()}
 						<p>
-							Move sliders, and get instant and <em>visual effects</em> that you can easily copy and
-							paste into your <strong>CSS sheet</strong>. Box shadow, borders, gradient, transforms,
-							and much more!
+							Move the sliders and see the result instantly! You can then easily copy and paste the
+							result into your <strong>CSS sheet</strong>. Choose from <em>box shadow</em>,
+							<em>borders</em>, <em>gradients</em>, <em>transforms</em>, and much more!
 						</p>
 					{/snippet}
 					{#snippet image()}

@@ -5,14 +5,15 @@
 	import type { BadgeLink } from '$lib/types/BadgeLink';
 
 	interface Props {
-		children: Snippet;
+		icon: Snippet;
 		title: string;
 		school: BadgeLink;
 		dates: string;
+		text?: Snippet;
 		description: string;
 	}
 
-	const { children, title, school, dates, description }: Props = $props();
+	const { icon, title, school, dates, text, description }: Props = $props();
 </script>
 
 <Card.Root
@@ -22,7 +23,7 @@
 		<Card.Title class="flex items-center gap-3">
 			<div class="flex items-center gap-3">
 				<div class="inline-block rounded-2xl border bg-accent p-3">
-					{@render children?.()}
+					{@render icon()}
 				</div>
 				{title}
 			</div>
@@ -41,6 +42,11 @@
 		</Card.Description>
 	</Card.Header>
 	<Card.Content class="px-3 sm:px-6">
+		{#if text}
+			<ul class="mb-3 list-disc space-y-3 px-1 sm:px-5">
+				{@render text?.()}
+			</ul>
+		{/if}
 		<p class="text-xs italic">{description}</p>
 	</Card.Content>
 </Card.Root>
