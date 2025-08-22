@@ -26,7 +26,7 @@
 	<article class="relative px-4 py-4 sm:px-6 sm:py-6">
 		{@render children?.()}
 
-		<div class="absolute top-0 left-0 h-full w-full">
+		<div class="top-0 left-0 hidden h-full w-full lg:absolute lg:block">
 			<Canvas>
 				<Scene />
 			</Canvas>
