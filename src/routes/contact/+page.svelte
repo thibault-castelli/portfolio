@@ -8,7 +8,7 @@
 
 <PageTitle title="Contact" />
 
-<div class="flex gap-20">
+<div class="flex flex-col gap-5 md:flex-row md:gap-20">
 	<section class="space-y-6">
 		<ContactCard>
 			{#snippet icon()}
@@ -40,7 +40,7 @@
 		</ContactCard>
 	</section>
 
-	<div class="min-h-[60vh] w-1/2" in:fade={{ duration: 800 }}>
+	<div class="h-auto w-full md:min-h-[60vh] md:w-1/2" in:fade={{ duration: 800 }}>
 		<DotCube zoom={2} dotSize={0.04} controlSpeed={0.15} />
 	</div>
 </div>

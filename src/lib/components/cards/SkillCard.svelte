@@ -16,13 +16,13 @@
 <Card.Root
 	class="h-full w-full bg-secondary-foreground transition hover:scale-[1.03] hover:border-primary hover:shadow-md hover:shadow-primary"
 >
-	<Card.Header>
+	<Card.Header class="px-3 sm:px-6">
 		<Card.Title class="flex items-center gap-3">
 			<div class="inline-block rounded-2xl border bg-accent p-3">{@render children?.()}</div>
 			{title}
 		</Card.Title>
 	</Card.Header>
-	<Card.Content>
+	<Card.Content class="px-3 sm:px-6">
 		<div>
 			{#each badges as badge, index (index)}
 				<a href={badge.link} target="_blank">

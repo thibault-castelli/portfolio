@@ -47,7 +47,7 @@
 				<ExperienceCard
 					title="Full-Stack Web Developer"
 					company={{
-						text: 'Ministry of the Executive Council of Quebec, Canada',
+						text: 'Ministry of Quebec, Canada',
 						link: 'https://www.quebec.ca/en/gouvernement/ministere/conseil-executif'
 					}}
 					dates="2024/06 - 2025/01"

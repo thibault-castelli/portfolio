@@ -23,7 +23,7 @@
 		<h2 class=" px-20 py-2">{title}</h2>
 	</section>
 
-	<article class="relative px-7 py-10">
+	<article class="relative px-4 py-4 sm:px-6 sm:py-6">
 		{@render children?.()}
 
 		<div class="absolute top-0 left-0 h-full w-full">

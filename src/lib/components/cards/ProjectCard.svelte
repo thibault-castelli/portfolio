@@ -21,8 +21,8 @@
 <Card.Root
 	class="h-full w-full bg-secondary-foreground transition select-none hover:border-primary hover:shadow-sm hover:shadow-primary"
 >
-	<Card.Header>
-		<Card.Title class="flex items-center justify-between gap-3">
+	<Card.Header class="px-3 sm:px-6">
+		<Card.Title class="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
 			<div class="flex items-center gap-3">
 				<div class="inline-block rounded-2xl border bg-accent p-3">
 					{@render icon()}
@@ -32,7 +32,7 @@
 				</a>
 			</div>
 
-			<div class="flex gap-3">
+			<div class="ml-2 flex gap-3 sm:ml-0">
 				<a href={githubLink} target="_blank" class="transition hover:text-primary">
 					<Github />
 				</a>
@@ -55,7 +55,7 @@
 			{/each}
 		</Card.Description>
 	</Card.Header>
-	<Card.Content>
+	<Card.Content class="px-3 sm:px-6">
 		<div>
 			{@render description()}
 		</div>

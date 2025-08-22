@@ -53,6 +53,6 @@
 	>
 </section>
 
-<section class="mx-auto mt-8 h-20 w-full xl:h-44" in:fade={{ duration: 800 }}>
+<section class="mx-auto mt-10 h-20 w-full xl:h-44" in:fade={{ duration: 800 }}>
 	<DotCube zoom={35} dotSize={0.2} controlSpeed={0.02} />
 </section>

@@ -24,7 +24,11 @@
 	});
 </script>
 
-<Carousel.Root setApi={(emblaApi) => (api = emblaApi)} class="mx-auto w-[90%]">
+<Carousel.Root
+	setApi={(emblaApi) => (api = emblaApi)}
+	class="mx-auto w-[80%] sm:w-[90%]"
+	opts={{ loop: true }}
+>
 	<Carousel.Content>
 		{@render carouselItems()}
 	</Carousel.Content>

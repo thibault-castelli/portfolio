@@ -18,7 +18,7 @@
 <Card.Root
 	class="h-full w-full bg-secondary-foreground transition select-none hover:border-primary hover:shadow-sm hover:shadow-primary"
 >
-	<Card.Header>
+	<Card.Header class="px-3 sm:px-6">
 		<Card.Title class="flex items-center gap-3">
 			<div class="flex items-center gap-3">
 				<div class="inline-block rounded-2xl border bg-accent p-3">
@@ -28,7 +28,7 @@
 			</div>
 		</Card.Title>
 		<Card.Description>
-			<div class="mt-3 flex items-center justify-between">
+			<div class="mt-3 flex flex-col items-center justify-between md:flex-row">
 				<a href={company.link} target="_blank">
 					<Badge
 						class="hover:text-shadow transition hover:border-primary hover:bg-background hover:text-primary hover:shadow-sm hover:shadow-primary"
@@ -41,7 +41,7 @@
 		</Card.Description>
 	</Card.Header>
 	<Card.Content>
-		<ul class="list-disc space-y-3 px-5">
+		<ul class="list-disc space-y-3 px-1 sm:px-5">
 			{@render descriptions()}
 		</ul>
 	</Card.Content>

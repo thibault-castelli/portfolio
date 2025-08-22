@@ -18,7 +18,7 @@
 <Card.Root
 	class="h-full w-full bg-secondary-foreground transition hover:scale-[1.03] hover:border-primary hover:shadow-md hover:shadow-primary"
 >
-	<Card.Header>
+	<Card.Header class="px-3 sm:px-6">
 		<Card.Title class="flex items-center gap-3">
 			<div class="flex items-center gap-3">
 				<div class="inline-block rounded-2xl border bg-accent p-3">
@@ -28,7 +28,7 @@
 			</div>
 		</Card.Title>
 		<Card.Description>
-			<div class="mt-3 flex items-center justify-between">
+			<div class="mt-3 flex flex-col items-center justify-between sm:flex-row">
 				<a href={school.link} target="_blank">
 					<Badge
 						class="hover:text-shadow transition hover:border-primary hover:bg-background hover:text-primary hover:shadow-sm hover:shadow-primary"
@@ -40,7 +40,7 @@
 			</div>
 		</Card.Description>
 	</Card.Header>
-	<Card.Content>
+	<Card.Content class="px-3 sm:px-6">
 		<p class="text-xs italic">{description}</p>
 	</Card.Content>
 </Card.Root>

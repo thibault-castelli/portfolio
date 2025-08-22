@@ -67,6 +67,16 @@
 		return new THREE.Points(geometry, material);
 	}
 
+	function onWindowResize() {
+		const parent = canvas.parentElement!;
+		const width = parent.clientWidth;
+		const height = parent.clientHeight;
+		renderer.setSize(width, height);
+
+		camera.aspect = width / height;
+		camera.updateProjectionMatrix();
+	}
+
 	onMount(() => {
 		renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
 		renderer.setClearColor(0x000000, 0);
@@ -115,6 +125,8 @@
 		};
 		animate();
 
+		window.addEventListener('resize', onWindowResize);
+
 		// Cleanup
 		return () => {
 			cancelAnimationFrame(animationId);
@@ -126,6 +138,7 @@
 			if (typeof renderer.forceContextLoss === 'function') {
 				renderer.forceContextLoss();
 			}
+			window.removeEventListener('resize', onWindowResize);
 		};
 	});
 
