@@ -43,7 +43,7 @@
 	</Card.Header>
 	<Card.Content class="px-3 sm:px-6">
 		{#if text}
-			<ul class="mb-3 list-disc space-y-3 px-1 sm:px-5">
+			<ul class="mb-3 list-disc space-y-3 px-4 sm:px-5">
 				{@render text?.()}
 			</ul>
 		{/if}
