@@ -2,4 +2,4 @@
 	const { children } = $props();
 </script>
 
-<span class="text-yellow-400">{@render children?.()}</span>
+<span class="text-purple-300">{@render children?.()}</span>

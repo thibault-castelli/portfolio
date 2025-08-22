@@ -22,6 +22,7 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<title>Thibault Castelli</title>
+	<meta name="description" content="Thibaut Castelli Portfolio - Full-Stack Web Developer" />
 </svelte:head>
 
 <header

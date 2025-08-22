@@ -26,20 +26,20 @@
 			</p>
 			<p>
 				<CodeVariable>adaptability</CodeVariable>: <CodeValue>true</CodeValue>, <CodeComment
-					>I embrace change and value constructive criticism as a means to continuously enhance my
-					skills and performance.</CodeComment
+					>I embrace change and value <em>constructive criticism</em> as a means to continuously enhance
+					my skills and performance.</CodeComment
 				>
 			</p>
 
 			<p>
 				<CodeVariable>teamWorker</CodeVariable>: <CodeValue>true</CodeValue>, <CodeComment
-					>I thrive in multidisciplinary teams, learning from the expertise of my colleagues. I am
-					an attentive listener and willing to contribute to ideas and projects.</CodeComment
+					>I thrive in <em>multidisciplinary teams</em>, learning from the expertise of my
+					colleagues. I am an <em>attentive listener</em> and willing to contribute to ideas and projects.</CodeComment
 				>
 			</p>
 			<p>
 				<CodeVariable>spiritOfSynthesis</CodeVariable>: <CodeValue>true</CodeValue>, <CodeComment
-					>I strive to develop simple and intuitive solutions that address complex problems.</CodeComment
+					>I strive to develop <em>simple and intuitive solutions</em> that address complex problems.</CodeComment
 				>
 			</p>
 			<p><CodeVariable>yearsOfExperience</CodeVariable>: <CodeValue>1.5</CodeValue>,</p>
@@ -51,3 +51,9 @@
 		<DotCube zoom={5} dotSize={0.05} controlSpeed={0.15} />
 	</div>
 </div>
+
+<style>
+	em {
+		color: var(--primary);
+	}
+</style>

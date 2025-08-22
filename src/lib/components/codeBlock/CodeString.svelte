@@ -8,4 +8,4 @@
 	const { children, tabCount = 0 }: Props = $props();
 </script>
 
-<span class={['text-blue-400', tabCount === 1 && 'ml-8']}>{@render children?.()}</span>
+<span class={['text-green-300', tabCount === 1 && 'ml-8']}>{@render children?.()}</span>
