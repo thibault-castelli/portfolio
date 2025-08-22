@@ -42,7 +42,7 @@
 					>I strive to develop <em>simple and intuitive solutions</em> that address complex problems.</CodeComment
 				>
 			</p>
-			<p><CodeVariable>yearsOfExperience</CodeVariable>: <CodeValue>1.5</CodeValue>,</p>
+			<p><CodeVariable>yearsOfExperience</CodeVariable>: <CodeValue>2</CodeValue>,</p>
 		</div>
 		<p class="mt-3">&#125;;</p>
 	</CodeBlock>

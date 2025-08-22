@@ -30,7 +30,7 @@
 						<li>
 							Collaborate on multiple full-stack <strong>.Net Core</strong> and
 							<strong>React</strong>
-							web applications,contributing to both <em>back-end</em> and <em>front-end</em> development.
+							web applications, contributing to both <em>back-end</em> and <em>front-end</em> development.
 						</li>
 						<li>
 							Incorporate <strong>SOLID principles</strong> into development practices to ensure
