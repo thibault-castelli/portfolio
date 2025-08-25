@@ -16,7 +16,7 @@
 	class="h-full w-full rounded-lg border border-b-secondary-foreground bg-background shadow-lg"
 	in:fade
 >
-	<section class="flex items-center rounded-t-lg bg-secondary-foreground">
+	<section class="flex items-center rounded-t-lg bg-secondary-foreground py-2">
 		<div class="absolute ml-3 h-3 w-3 rounded-full bg-red-500"></div>
 		<div class="absolute ml-8 h-3 w-3 rounded-full bg-yellow-500"></div>
 		<div class="absolute ml-13 h-3 w-3 rounded-full bg-green-500"></div>
